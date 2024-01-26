@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.huseyinozkan.quizonline"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.huseyinozkan.quizonline"
