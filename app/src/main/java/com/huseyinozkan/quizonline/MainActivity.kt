@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
 
         val listQuestionModel = mutableListOf<QuestionModel>()
         listQuestionModel.add(QuestionModel("What is Android?", mutableListOf("Language", "OS","Product","None"),"OS"))
+        listQuestionModel.add(QuestionModel("What is Android?", mutableListOf("Language", "OS","Product","None"),"OS"))
+        listQuestionModel.add(QuestionModel("What is Android?", mutableListOf("Language", "OS","Product","None"),"OS"))
 
         quizModelList.add(QuizModel("1","Programming","All the basic programming","10",listQuestionModel))
         //quizModelList.add(QuizModel("2","Computer","All the computer questions","20"))
