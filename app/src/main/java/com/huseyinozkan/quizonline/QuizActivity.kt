@@ -54,6 +54,11 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun loadQuestions(){
+        selectedAnswer = ""
+        if (currentQuestionIndex == questionModelList.size){
+            finishQuiz()
+            return
+        }
         binding.apply {
             questionIndicatorTextview.text = "Quesiton ${currentQuestionIndex+1} / ${questionModelList.size} "
             questionProgressIndicator.progress = (currentQuestionIndex.toFloat() / questionModelList.size.toFloat() * 100).toInt()
@@ -91,5 +96,9 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
                 clickedBtn.setBackgroundColor(getColor(R.color.red))
             }
         }
+    }
+
+    private fun finishQuiz(){
+
     }
 }
